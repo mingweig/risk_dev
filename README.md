@@ -45,4 +45,30 @@ The following tasks should be completed by the candidate in their preferred orde
 
 ### Enhancements ###
 
-Please list any enhancements made here
+1. **User Feedback with Alert Messages:**
+   - Integrated `dash_bootstrap_components` to incorporate `dbc.Alert` components, providing immediate and clear feedback to users upon successful or failed operations such as saving or deleting observations.
+
+2. **Robust Error Handling and Logging:**
+   - Implemented try-except in callbacks to gracefully handle exceptions. Errors are logged using Python's `logging` module, for easier debugging and maintenance.
+
+3. **Input Validation:**
+   - Added `type='number'` to numerical input fields (`price-input` and `delete-n-observations`) to enforce correct data types and prevent invalid entries.
+
+4. **Database / DataTable Configuration:**
+   - Added `'ID'` column to make it easier to maintain data integrity,
+   - Explicitly defined columns in the `dash_table.DataTable`, including hiding sensitive columns like `'ID'`. Implemented pagination and styling for improved readability and performance.
+
+5. **Optimized Date Handling:**
+   - Ensured consistent `datetime` formats for both the dataframe and user inputs. 
+   - Implemented optional date filtering in the "Average Item Price by City" graph to allow users to view data for specific dates for `Average Item Price by City`
+
+6. **Modular Code Structure:**
+   - Organized code into clear, logical sections with comments for description, for easier maintenance and scalability.
+
+7. **Graph Configuration for Enhanced Readability:**
+   - Configured graphs with descriptive axis titles, legend titles, and hover data to make data insights more accessible and understandable. 
+
+8. **Rounding Prices to Two Decimal Places:**
+   - Ensured all price values are consistently displayed with two decimal places by implementing rounding during data generation and processing to enhances data consistency and readability, aligning with standard financial reporting practices.
+
+
